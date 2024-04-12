@@ -1,0 +1,752 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: none;
+    scroll-behavior: smooth;
+    user-select: none;
+    font-family: "Lunapark";
+    transition: .5s;
+}
+
+/* ширина */
+.w1600 {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.py {
+    padding: 30px 0;
+}
+
+@font-face {
+    font-family: "Lunapark";
+    src: url(../font/Lunapark.ttf);
+}
+
+@font-face {
+    font-family: "occidental";
+    src: url(../font/occidental.otf);
+}
+@font-face {
+    font-family: "allura";
+    src: url(../font/all.ttf);
+}
+.rub{
+    font-family: "allura";
+}
+/* body{
+    background-color: #FFFDF9;
+} */
+h1, h2, h3{
+    font-family: "occidental";
+    font-weight: 300;
+}
+h1{
+    font-size: 96px;
+}
+h2{
+    font-size: 64px;
+}
+h3{
+    font-size: 32px;
+}
+h4{
+    font-size: 24px;
+    font-weight: 300;
+}
+.white{
+    color: #FFF;
+}
+button{
+    background-color: none;
+}
+a{
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.14em;
+}
+p{
+    font-size: 24px;
+    letter-spacing: 0.14em;
+}
+.border{
+    border-radius: 4px;
+    border: 1px solid #94836E;
+}
+button{
+    font-size: 32px;
+}
+.act{
+    width: 100%;
+    padding: 20px 0;
+    background-color: #353F3A;
+    color: #FFF;
+    font-size: 24px;
+}
+
+/* header */
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 3456;
+    background-color: #FFFDF9;
+}
+.header-in{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    
+}
+.header-in nav{
+    display: flex;
+    gap: 84px;
+}
+nav a{
+    color: #94836E ;
+}
+
+/* banner */
+.banner-full img{
+    position: relative;
+    width: 100%;
+}
+.banner-text{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 10%;
+    right: 40%;
+}
+.banner-arrow{
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-arrow span:first-child{
+    animation: banerErrow 3s infinite;
+}
+
+.banner-arrow span:last-child{
+    animation: banerErrow 3s infinite;
+    animation-delay: 2s;
+    opacity: 0;
+    margin-top: -35px;
+}
+@keyframes banerErrow {
+    0% {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        transform: translateY(90px);
+    }
+}
+
+.catalog{
+    width: fit-content;
+    height: fit-content;
+
+}
+.catalog-img img{
+    width: 100%;
+}
+.catalog{
+    position: relative;
+}
+.in-catalog{
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+.in-catalog h2{
+    text-align: end;
+}
+.goover{
+    position: relative;
+}
+.over{
+    position: absolute;
+    bottom: 25%;
+    left: 17%;
+    font-size: 32px;
+}
+.over::after{
+    content: url(../img/main/arrow.png);
+    margin-left: 20px;
+}
+
+
+
+.main-about{
+    display: flex;
+    width: 100%;
+}
+.about1{
+    position: relative;
+    width: 50%;
+}
+.moreban{
+    width: 100%;
+}
+.about1-text{
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    width: 760px;
+    text-align: center;
+}
+.more{
+    position: relative;
+    margin-top: 115px;
+}
+.more-txt{
+    position: absolute;
+    top: 38%;
+    right: 40%;
+}
+.more-txt a::after{
+    content: url(../img/main/ar.png);
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.about1 h2{
+    padding-bottom: 33px;
+}
+
+
+footer{
+    background-color: #3C3F35 ;
+}
+.socials{
+    display: flex;
+    gap: 20px;
+}
+.subscrib{
+    display: flex;
+    gap: 12px;
+}
+.subscrib input{
+    width: 262px;
+    height: 42px;
+    padding-left: 22px;
+    background-color: transparent;
+    border: 1px solid #E8E6E1;
+    font-size: 20px;
+}
+.subscrib button{
+    width: 180px;
+    height: 42px;
+    background-color: #E8E6E1;
+    color: #353F3A;
+    font-size: 20px;
+}
+.subscribe p{
+    font-size: 17px;
+    color: #FFF;
+    padding-bottom: 24px;
+}
+.footer-full{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 27px 0 35px;
+}
+footer nav{
+    display: flex;
+    gap: 59px;
+}
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(232, 230, 225, 0.43);
+    padding: 28px;
+}
+
+
+
+
+/* каталог */
+.page-cat{
+    padding: 16px ;
+    border-top: 1px solid #94836E;
+}
+.catalog-banner img{
+    width: 100%;
+}
+.catalog-filter{
+    display: flex;
+    align-items: center;
+}
+.catalog-filter a{
+    color: #94836E;
+}
+.filter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 127px;
+    width: 267px;
+    background-color: #F9F7F4;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+}
+.card{
+    position: relative;
+    border-right: 1px solid #94836E;
+}
+.card-img{
+    width: 399px;
+}
+.big-card{
+    max-width: 799px;
+}
+.card-bag{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+.card p{
+    font-size: 20px;
+    color: #94836E;
+}
+.card-about-full{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 13px;
+}
+.catalog-about{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.catalog-about p{
+    text-align: center;
+    font-size: 15px;
+    width: 1060px;
+    color: #94836E;
+    padding-bottom: 59px;
+}
+.catalog-about hr{
+    border: 1px solid #94836e6e;
+    margin: 124px 0 33px;
+}
+
+
+
+/* о нас */
+.about-item-full{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+.about-us img{
+    width: 100%;
+}
+.about-text p{
+    width: 1153px;
+    text-align: center;
+}
+.about-text{
+    text-align: center;
+    width: fit-content;
+    padding: 55px 0 82px;
+}
+.about-item{
+    margin-left: 10%;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #3C3F35;
+    width: fit-content;
+    width: 280px;
+    height: 280px;
+    text-align: center;
+    border-radius: 50%;
+}
+.about span{
+    font-size: 60px;
+}
+.ab2{
+    margin-left: 100%;
+}
+@keyframes moveUp {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+@keyframes moveDown {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(20px); }
+}
+
+@keyframes moveLeft {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-20px); }
+}
+
+@keyframes moveRight {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(20px); }
+}
+
+.about-item .about {
+    position: relative;
+    animation-duration: 3s; /* Длительность анимации */
+    animation-iteration-count: infinite; /* Бесконечное повторение анимации */
+    animation-timing-function: ease-in-out; /* Функция времени */
+}
+
+.ab1 {
+    animation-name: moveUp, moveDown, moveLeft, moveRight; /* Комбинируем анимации */
+}
+
+.ab2 {
+    animation-name: moveDown, moveRight, moveUp, moveLeft; /* Комбинируем анимации */
+}
+
+.ab3 {
+    animation-name: moveLeft, moveUp, moveRight, moveDown; /* Комбинируем анимации */
+}
+
+
+.contact-more{
+    text-align: center;
+    padding: 20px 0 69px;
+    width: fit-content;
+}
+.contact-more hr{
+    border: 1px solid #94836E;
+    margin-bottom: 43px;
+    margin-left: 37%;
+    width: 200px;
+}
+.contact-more button{
+    width: 780px;
+    height: 77px;
+    margin-top: 37px;
+    background-color: transparent;
+    border: 1px solid #94836E;
+}
+
+
+/* контакты */
+.contact-us{
+    display: flex;
+    width: 100%;
+    background-color: #F9F7F4;
+}
+.contact-title{
+    text-align: center;
+}
+.contact-title h2{
+    padding-top: 100px;
+}
+.contact-title p{
+    padding: 27px 0 36px;
+}
+.address{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    margin: 35px 0;
+}
+.address p{
+    font-size: 20px;
+    padding-top: 16px;
+}
+.address a{
+    color: black;
+}
+.address:last-child{
+    border-left: 1px solid #94836E;
+}
+.contact-form{
+    padding: 35px 53px 30px 53px;
+    margin: 60px;
+    border-left: 1px solid #94836E;
+    border-right: 1px solid #94836E;
+}
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    margin: 64px 0 76px;
+    display: flex;
+    text-align: start;
+}
+.contact-form input{
+    height: 51px;
+    font-size: 20px;
+    color: #94836e95;
+    outline: none;
+    margin-bottom: 32px;
+    padding: 0 14px ;
+}
+.approval{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.approval input{
+    width: 27px;
+}
+.approval p{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.contact-form a{
+   text-align: center;
+}
+.contact-form button{
+    background-color: transparent;
+    color: #F9F7F4;
+}
+.contact-form .messange input{
+    padding: 20px 20px 90px;
+    height: 117px;
+    width: 100%;
+}
+
+
+/* один товар */
+.item-full{
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    gap: 89px;
+    margin-bottom: 100px;
+}
+.item-text{
+    position: sticky;
+    top: 15%;
+    height:fit-content;
+}
+.item-text h3{
+    font-size: 50px;
+    padding-bottom: 8px;
+}
+.item-text p{
+    font-size: 24px;
+    padding-top: 34px;
+}
+summary {
+    list-style: none;
+    border-bottom: 1px solid #94836E;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 99px 0 21px;
+}
+details[open] summary::after {
+    content: url(../img/icons/arr-edit.png);
+}
+summary::after {
+    content: url(../img/icons/item-arrow.png);
+    float: right;
+}
+.haracter{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: 24px;
+}
+.har{
+    display: flex;
+
+}
+.har-in{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* корзина */
+.bag-title h2{
+    text-align: center;
+    padding: 120px 0 40px;
+}
+.bag-page button{
+    background-color: transparent;
+}
+.item-bag-img img{
+    width: 180px;
+    border-right: 1px solid #94836E;
+    padding-right: 26px;
+}
+.item-bag-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item-bag{
+    display: flex;
+    gap: 25px;
+    border: 1px solid #94836E;
+    padding: 15px;
+}
+.item-bag-text-full{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.item-bag-sale{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}
+.item-type{
+    display: flex;
+    width: 100%;
+}
+.counts{
+    display: flex;
+    gap: 10px;
+}
+.type{
+    display: flex;
+    gap: 12px;
+    width: 50%;
+}
+.type:last-child{
+    border-left: 1px solid #94836E;
+    padding-left: 37px;
+}
+.type input{
+    width: 32px;
+}
+.item-dics{
+    display: flex;
+    justify-content: space-between;
+}
+.name-bag{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.bag-log{
+    text-align: center;
+    width: 100%;
+    background-color: #F9F7F4;
+    margin: 40px 0 50px;
+    padding: 26px 15px 0;
+}
+.bag-button{
+    display: flex;
+    gap: 29px;
+    padding: 23px 0 30px;
+}
+.buy{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 122px;
+    background-color: #353F3A;
+    padding: 25px 0;
+}
+.buy a{
+    color: #F9F7F4;
+    font-size: 24px;
+}
+.inact{
+    background-color: #FFFDF9;
+    color: #353F3A;
+}
+.inact:hover{
+    background-color: #353F3A;
+    color: #FFFDF9;
+}
+
+/* страница со входом0 */
+.login-page-title{
+    margin-left: 55px;
+}
+.login{
+    display: flex;
+    justify-content: space-between;
+}
+.login-page h2{
+    padding-top: 120px;
+}
+.login input{
+    width: 975px;
+}
+.log-img{
+    transform: translateY(10%);
+}
+.login p{
+    margin-top: 40px;
+    font-size: 20px;
+    color: #94836E;
+}
+.login a{
+    color: #353F3A;
+}
+/* регистрация */
+.reg-form{
+    width: 1160px;
+    padding: 2px 53px;
+    margin: 10px 60px 60px;
+}
+.reg-form a{
+    font-size: 20px;
+    color: #94836E;
+    padding-bottom: 30px;
+}
+.register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* ЛК */
+.orders{
+    display: flex;
+    gap: 30px;
+    padding-top: 150px;
+}
+.about-order{
+    display: flex;
+    flex-direction: column;
+}
+.item-bag-text h4{
+    font-size: 20px;
+}
+.order-del{
+    display: flex;
+    justify-content: end;
+}
+.order-del a{
+    padding: 7px 48px;
+    border: 1px solid #94836E;
+    color: #353F3A;
+}
+.order-or{
+    padding-left: 10px;
+    border-left: 1px solid #94836E;
+    width: 100%;
+}
+.order-account{
+    width: 300px;
+    padding-right: 63px;
+    border-right: 1px solid #94836E;
+}
